@@ -24,3 +24,15 @@ line-height: 2.4rem;
 text-align: center;
 color: #969FAD;
 }
+
+.rating{
+font-size: 1.5rem;
+font-weight: 400;
+line-height: 2.4rem;
+text-align: center;
+color: #FC7614;
+padding:0.5rem 2rem;
+background-color: #262E38;
+margin-top: 2rem;
+border-radius: 20px;
+}

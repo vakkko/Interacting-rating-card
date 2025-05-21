@@ -23,10 +23,5 @@ body {
   width: 30%;
   background: linear-gradient(#232a34, #181e27);
   border-radius: 15px;
-}
-
-.main-container {
-  /* background: linear-gradient(#232a34, #181e27);
-  border-radius: 15px; */
   padding: 3rem;
 }

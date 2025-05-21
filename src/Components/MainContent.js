@@ -1,12 +1,12 @@
-import React, { useState } from "react";
 import "./main-content.css";
 
-
-
-function MainContent() {
-  const [selectedValue, setSelectedValue] = useState(null);
+function MainContent({ setSelectedValue, setIsSubmited }) {
   const handleClick = (number) => {
     setSelectedValue(number);
+  };
+
+  const handleSubmit = () => {
+    setIsSubmited((prev) => !prev);
   };
 
   return (
@@ -23,8 +23,9 @@ function MainContent() {
         <Button number={4} onClick={handleClick} />
         <Button number={5} onClick={handleClick} />
       </div>
-      <button className="btn-submit">SUBMIT</button>
-      {selectedValue && <p>{selectedValue}</p>}
+      <button onClick={handleSubmit} className="btn-submit">
+        SUBMIT
+      </button>
     </div>
   );
 }
@@ -38,5 +39,3 @@ function Button({ number, onClick }) {
 }
 
 export default MainContent;
-
-
